@@ -1,14 +1,20 @@
-import estilos from './Nav.module.css'
+// import estilos from './Nav.module.css'
+import styled from "styled-components";
+
+const Navegacao = styled.nav`
+    background-color: black;
+    
+`
 
 const Nav = () => {
     return(
-    <nav >
-        <ul className={estilos.menu}>
+    <Navegacao>
+        <ul >
             <li>Início</li>
             <li>Sobre</li>
             <li>Contato</li>
         </ul>
-    </nav>
+    </Navegacao>
     )
 }
 
