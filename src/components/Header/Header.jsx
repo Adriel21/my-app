@@ -1,6 +1,7 @@
 // import estilos from './Header.module.css';
 import styled from 'styled-components';
 import Nav from './Nav/Nav';
+import { Link } from 'react-router-dom';
 
 const periodo = "asd";
 
@@ -23,7 +24,7 @@ const StyledCabecalho = styled.header`
 const Header = () => {
     return(
         <StyledCabecalho>
-            <h1>Logo</h1>
+            <h1><Link exact to="/">Logo</Link></h1>
            <Nav />
         </StyledCabecalho>
     )

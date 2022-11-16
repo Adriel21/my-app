@@ -1,20 +1,18 @@
-// import estilos from './Nav.module.css'
+import estilos from './Nav.module.css'
 import styled from "styled-components";
+import { NavLink } from 'react-router-dom';
 
-const Navegacao = styled.nav`
-    background-color: black;
-    
-`
+
 
 const Nav = () => {
     return(
-    <Navegacao>
-        <ul >
-            <li>Início</li>
-            <li>Sobre</li>
+    <nav>
+        <ul className={estilos.menu}>
+            <li><NavLink to="/">Início</NavLink></li>
+            <li><NavLink to="/sobre">Sobre</NavLink></li>
             <li>Contato</li>
         </ul>
-    </Navegacao>
+    </nav>
     )
 }
 
